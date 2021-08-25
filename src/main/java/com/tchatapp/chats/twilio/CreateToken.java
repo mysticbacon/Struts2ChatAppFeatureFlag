@@ -17,10 +17,12 @@ public class CreateToken {
 	    grant.setEndpointId(endpointId);
 	    grant.setServiceSid(serviceSid);
 
+// TODO: Uncomment lines below to connect to your Twilio account
 //	    AccessToken token = new AccessToken.Builder(twilioAccountSid, twilioApiKey, twilioApiSecret)
 //	        .identity(identity).grant(grant).build();
+//		  return token;
 	    
-	    return "token";
+	    return "fake_token";
 	  }
 
 }

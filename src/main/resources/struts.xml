@@ -10,9 +10,11 @@
     <package name="default" namespace="/" extends="json-default">
      <default-action-ref name="index"/> 
      
-        <action name="index">
-            <result>/index.jsp</result>
+        <action name="index" class="com.tchatapp.chats.action.Main" method="execute">
+            <result name="OFF">/index.jsp</result>
+            <result name="ON">/index_new.jsp</result>
         </action>
+
         <action name="token" class="com.tchatapp.chats.action.TokenGenerator" method="execute">
           <result type="json"/>
        </action>
